@@ -5,9 +5,10 @@ import random
 
 class MajorArcana():
 
-    def __init__(self,name,description):
+    def __init__(self,number,name,description):
         self.name = name
         self.description = description
+        self.number = number
 
 class MinorArcana():
     
@@ -24,6 +25,7 @@ class Spread():
 #Create the Deck
 deck = []
 suits = ['Wands','Cups','Pentacles','Swords']
+m_cards = [["0","The Fool"],["I","The Magician"],["II","The High Priestess"],["III","The Empress"],["IV","The Emperor"],["V","The Hierophant"],["VI","The Lovers"],["VII","The Chariot"],["VIII","Strength"]]
 
 #Itterate through and programatically generate Minor Arcana
 for suit in suits:
@@ -41,4 +43,3 @@ for suit in suits:
         elif i == 14:
             deck.append(MinorArcana("King",suit))
         i += 1
-        
