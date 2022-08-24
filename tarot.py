@@ -10,7 +10,7 @@ class MajorArcana(self,name,description):
 
 class MinorArcana(self,number,suit):
     self.number = number
-    self.suit - suite
+    self.suit = suit
 
 class Spread(self,name,number_of_cards):
     self.name = name
