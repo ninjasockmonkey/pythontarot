@@ -20,3 +20,25 @@ class Spread():
     def __init__(self,name,number_of_cards):
         self.name = name
         self.number_of_cards = number_of_cards
+
+#Create the Deck
+deck = []
+suits = ['Wands','Cups','Pentacles','Swords']
+
+#Itterate through and programatically generate Minor Arcana
+for suit in suits:
+    for i in range(1,15):
+        if i == 1:
+            deck.append(MinorArcana("Ace",suit))
+        elif i == 2 or i <= 10:
+            deck.append(MinorArcana(i,suit))
+        elif i == 11:
+            deck.append(MinorArcana("Page",suit))
+        elif i == 12:
+            deck.append(MinorArcana("Knight",suit))
+        elif i == 13:
+            deck.append(MinorArcana("Queen",suit))
+        elif i == 14:
+            deck.append(MinorArcana("King",suit))
+        i += 1
+        
