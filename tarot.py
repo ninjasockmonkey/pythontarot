@@ -5,9 +5,8 @@ import random
 
 class MajorArcana():
 
-    def __init__(self,number,name,description):
+    def __init__(self,number,name):
         self.name = name
-        self.description = description
         self.number = number
 
 class MinorArcana():
@@ -25,7 +24,7 @@ class Spread():
 #Create the Deck
 deck = []
 suits = ['Wands','Cups','Pentacles','Swords']
-m_cards = [["0","The Fool"],["I","The Magician"],["II","The High Priestess"],["III","The Empress"],["IV","The Emperor"],["V","The Hierophant"],["VI","The Lovers"],["VII","The Chariot"],["VIII","Strength"]]
+m_cards = [["0","The Fool"],["I","The Magician"],["II","The High Priestess"],["III","The Empress"],["IV","The Emperor"],["V","The Hierophant"],["VI","The Lovers"],["VII","The Chariot"],["VIII","Strength"],["IX","The Hermit"],["X","Wheel of Fortune"],["XI","Justice"],["XII","The Hanged Man"],["XIII","Death"],["XIV","Temperance"],["XV", "The Devil"],["XVI","The Tower"],["XVII","The Star"],["XVIII","The Moon"],["XIX","The Sun"],["XX","Judgement"],["XXI","The World"]]
 
 #Itterate through and programatically generate Minor Arcana
 for suit in suits:
@@ -43,3 +42,5 @@ for suit in suits:
         elif i == 14:
             deck.append(MinorArcana("King",suit))
         i += 1
+
+#Itterate through and programitically generate Major Arcana
